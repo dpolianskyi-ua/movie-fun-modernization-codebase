@@ -4,3 +4,7 @@ classes
 build
 .idea
 .env
+gradlew
+gradlew.bat
+launcher
+.gradle/
