@@ -77,7 +77,6 @@ public class AlbumsController {
         return new HttpEntity<>(imageBytes, headers);
     }
 
-
     private void tryToUploadCover(@PathVariable Long albumId, @RequestParam("file") MultipartFile uploadedFile) throws IOException {
         Blob coverBlob = new Blob(
             getCoverBlobName(albumId),
