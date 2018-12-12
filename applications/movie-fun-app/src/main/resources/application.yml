@@ -7,6 +7,10 @@ logging.level:
   root: WARN
   org.superbiz.moviefun: DEBUG
 
+security:
+  basic:
+    enabled: false
+
 s3:
   accessKey: <access key id>
   secretKey: <secret access key>
