@@ -1,9 +1,9 @@
-package org.superbiz.moviefun;
+package org.superbiz.moviefun.albums;
 
+import org.hamcrest.core.IsEqual;
+import org.junit.Assert;
 import org.junit.Test;
-
-import static org.hamcrest.core.IsEqual.equalTo;
-import static org.junit.Assert.*;
+import org.superbiz.cfsupport.ServiceCredentials;
 
 public class ServiceCredentialsTest {
     @Test
@@ -67,7 +67,7 @@ public class ServiceCredentialsTest {
 
         String accessKeyId = serviceCredentials.getCredential("photo-storage", "user-provided", "access_key_id");
 
-        assertThat(accessKeyId, equalTo("asdfasdf"));
+        Assert.assertThat(accessKeyId, IsEqual.equalTo("asdfasdf"));
 
     }
 }
